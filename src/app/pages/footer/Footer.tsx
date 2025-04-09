@@ -1,40 +1,128 @@
 import { Link } from 'react-router-dom'
 import './footer.css'
+import veggieLogo from '../../assets/Images/VeggieGo_Logo_White.png';
 
 const Footer = () => {
     return (
         <>
-            {/* <div className="bg-dark text-light py-4 footer" >
+            <div className="bg-dark text-light py-4 footer">
                 <div className="container">
-                    <div className="row text-center text-md-start">
-                        <div className="col-md-6">
-                            <h5>About Us</h5>
-                            <p className="text-muted">
-                                We provide quality services to our customers. Stay connected with us!
-                            </p>
+                    <div className='row'>
+                        <div className='col-lg-5 col-md-6 col-12'>
+                            <div className='about text-start'>
+                                <div className='logo_footer'>
+                                    <img src={veggieLogo} style={{ height: "50px" }} />
+                                </div>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem sum has been the industrys standard dummytext ever since the when an unknown printer took.
+                                </p>
+                                <div className='app-btn d-flex'>
+                                    <div className=''></div>
+                                    <div className=''></div>
+                                </div>
+                            </div>
                         </div>
-
-
-                        <div className="col-md-6 text-md-end">
-                            <h5>Follow Us</h5>
-                            <div>
-                                <Link to="#" className="text-light mx-2">
-                                    <i className="fab fa-facebook"></i>
-                                </Link>
-                                <Link to="#" className="text-light mx-2">
-                                    <i className="fab fa-twitter"></i>
-                                </Link>
-                                <Link to="#" className="text-light mx-2">
-                                    <i className="fab fa-instagram"></i>
-                                </Link>
+                        <div className='col-lg-2 col-md-6 col-12'>
+                            <div className='links text-start'>
+                                <h5 className=''>Quick Links</h5>
+                                <ul>
+                                    <li>
+                                        <Link to='/' className=''>Home</Link>
+                                    </li>
+                                    <li>
+                                        <Link to='/' className=''>About us</Link>
+                                    </li>
+                                    <li>
+                                        <Link to='/' className=''>Pricing</Link>
+                                    </li>
+                                    <li>
+                                        <Link to='/' className=''>Blog</Link>
+                                    </li>
+                                    <li>
+                                        <Link to='/' className=''>Contact us</Link>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className='col-lg-2 col-md-6 col-12'>
+                            <div className='links text-start'>
+                                <h5>Support</h5>
+                                <ul>
+                                    <li>
+                                        <Link to='/' className=''>FAQs</Link>
+                                    </li>
+                                    <li>
+                                        <Link to='/' className=''>Support</Link>
+                                    </li>
+                                    <li>
+                                        <Link to='/' className=''>How it works</Link>
+                                    </li>
+                                    <li>
+                                        <Link to='/' className=''>Terms & conditions</Link>
+                                    </li>
+                                    <li>
+                                        <Link to='/' className=''>Privacy policy</Link>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className='col-lg-3 col-md-6 col-12'>
+                            <div className='links text-start'>
+                                <h5>Subscribe us</h5>
+                            </div>
+                            <div className='news text-start'>
+                                <p>Subscribe our newsleter to receive latest updates regularly from us!</p>
+                                <div className='form-group position-relative'>
+                                    <input type='email'
+                                        className='form-control'
+                                        placeholder='Enter your email'
+                                    />
+                                    <button className='btn btn-email'>
+                                        <i className="fas fa-paper-plane text-white"></i>
+                                    </button>
+                                </div>
+                                <div className='note'>By clicking send link you agree to receive message.</div>
                             </div>
                         </div>
                     </div>
-
-                    <hr className="bg-light" />
-                    <p className="text-center m-0">&copy; {new Date().getFullYear()} Your Company Name. All Rights Reserved.</p>
                 </div>
-            </div> */}
+                <div className='footer-bottom'>
+                    <div className='container'>
+                        <div className='row'>
+                            <div className='col-md-4'>
+                                <p className='text-start'>© Copyrights 2024. All rights reserved.</p>
+                            </div>
+                            <div className='col-md-4'>
+                                <ul className='social-media-icons d-flex gap-3 justify-content-center'>
+                                    <li>
+                                        <Link to='/' className='icon-social'>
+                                            <i className="fa-brands fa-facebook-f text-white"></i>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to='/' className='icon-social'>
+                                            <i className="fa-brands fa-x-twitter text-white"></i>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to='/' className='icon-social'>
+                                            <i className="fa-brands fa-instagram text-white"></i>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to='/' className='icon-social'>
+                                            <i className="fa-brands fa-pinterest text-white"></i>
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className='col-md-4'>
+                                <p className='text-end'>Design & developed by Swapac Infotech</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </>
     )
 }

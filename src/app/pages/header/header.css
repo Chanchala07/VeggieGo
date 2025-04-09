@@ -4,7 +4,32 @@
     left: 0;
     width: 100%;
     text-align: center;
-    background-color: purple;
     color: white;
     z-index: 9999;
   }
+  .btn_block{
+    position: relative;
+    display: inline-block;
+    margin-left: 150px;
+  }
+  .nav-link.btn_dark{
+    color: #fff !important;
+    background-color: #fb5b29 !important;
+    font-size: 16px !important;
+    padding: 9px 40px !important;
+    border-radius: 8px;
+    position: relative;
+    transition: .4s all !important;
+    z-index: 2;
+    overflow: hidden;
+    border: solid 1px #fb5b29 !important;
+  }
+  .nav-link.btn_dark:hover{
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #fb5b29;
+  }
+  
+  
+
+  
