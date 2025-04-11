@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom'
 import './footer.css'
-import veggieLogo from '../../assets/Images/VeggieGo_Logo_White.png';
+import veggieLogo from '../../assets/Images/veggiego_footer.png';
+import googlePlay from '../../assets/Images/googleplay.png';
+import appStore from '../../assets/Images/appstore.png';
 
 const Footer = () => {
     return (
         <>
-            <div className="bg-dark text-light py-4 footer">
+            <div className="bg-dark text-light footer">
                 <div className="container">
                     <div className='row'>
                         <div className='col-lg-5 col-md-6 col-12'>
@@ -14,11 +16,19 @@ const Footer = () => {
                                     <img src={veggieLogo} style={{ height: "50px" }} />
                                 </div>
                                 <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem sum has been the industrys standard dummytext ever since the when an unknown printer took.
+                                Enjoy fast and reliable delivery of the best fruits and vegetables. We bring farm-fresh produce straight to your doorstep. Quality you Enjoy fast and reliable delivery of the best fruits and vegetables.
                                 </p>
                                 <div className='app-btn d-flex'>
-                                    <div className=''></div>
-                                    <div className=''></div>
+                                    <li>
+                                        <Link to='/'>
+                                            <img src={appStore} />
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to='/'>
+                                            <img src={googlePlay} />
+                                        </Link>
+                                    </li>
                                 </div>
                             </div>
                         </div>
