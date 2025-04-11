@@ -1,11 +1,31 @@
 import { Link } from 'react-router-dom';
 import './homePage.css';
-import veggieLogo from '../../assets/Images/veggiego-logo.png';
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules"; // Use correct module import
-import veggies from '../../assets/Images/cat2.png'
+import clockWhite from '../../assets/Images/clock-white.png'
+import veggies from '../../assets/Images/cat2.png';
+import smiley from '../../assets/Images/smiley.png';
+import user from '../../assets/Images/user.png'
+import bagIcon from '../../assets/Images/bag-icon 2.png';
+import star from '../../assets/Images/start.png'
+import capsicum from '../../assets/Images/capsicum.png';
+import veggies_left from '../../assets/Images/vegeis_left.png'
+import '../../assets/css/style.css';
+import googlePlay from '../../assets/Images/googleplay.png';
+import appStore from '../../assets/Images/appstore.png';
+import device from '../../assets/Images/Mockup 1.png';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
+import mobileImage from '../../assets/Images/mobile.png';
+import tickCircle from '../../assets/Images/tick-circle.png';
 
 const HomePage = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration
+      once: true,     // whether animation should happen only once - while scrolling down
+    });
+  }, []);
   const vegetables = [
     { name: "Apple", image: veggies },
     { name: "Strawberry", image: veggies },
@@ -21,32 +41,294 @@ const HomePage = () => {
   return (
     <>
       <div className='main'>
-        <section className=" bg-success text-white text-center py-5 banner_section_main postion-relative">
-          <div className='banner-section-content'>
-            <div className='banner-section-item pd-100 d-flex justify-content-center align-items-center'>
-              <div className="container">
-                <div className='row align-items-center justify-content-center'>
-                  <div className='col-md-7'>
-                    <div className='title'>
-                      <h1>Organic Veggies & Foods You Cook</h1>
-                    </div>
-                    <div className='text py-3'>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-                    </div>
-                    {/* <div className="text float-left py-3">
-                      <Link to="/shop" className="btn btn-shop mt-3">
-                        Shop Now
-                      </Link>
-                    </div> */}
-                  </div>
+        <div className='banner_section'>
 
-                  <div className='col-md-5'></div>
+        </div>
+        <div className='page_wrapper'>
+          <div className='up_section'>
+            <div className='blur_section bs_1'></div>
+            <div className='blur_section bs_2'></div>
+            <div className='inner_section'>
+              <div className='container'>
+                <div className='row'>
+                  <div className='col-lg-3 col-sm-6 col-md-6'>
+                    <div className='box'>
+                      <div className='box_icon'>
+                        <img src={smiley} />
+                      </div>
+                      <div className='box_text'>
+                        <span className='counter_value'>5000</span>
+                        <span className='plus'>+</span>
+                        <p className='mb-0'>Happy Users</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='col-lg-3 col-sm-6 col-md-6'>
+                    <div className='box'>
+                      <div className='box_icon'>
+                        <img src={star} />
+                      </div>
+                      <div className='box_text'>
+                        <span className='counter_value'>1879</span>
+                        <span className='plus'>+</span>
+                        <p className='mb-0'>Positive Reviews</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='col-lg-3 col-sm-6 col-md-6'>
+                    <div className='box'>
+                      <div className='box_icon'>
+                        <img src={user} />
+                      </div>
+                      <div className='box_text'>
+                        <span className='counter_value'>3855</span>
+                        <span className='plus'>+</span>
+                        <p className='mb-0'>Restaurant Listings</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='col-lg-3 col-sm-6 col-md-6'>
+                    <div className='box'>
+                      <div className='box_icon'>
+                        <img src={bagIcon} />
+                      </div>
+                      <div className='box_text'>
+                        <span className='counter_value' data-count='5000'>985M</span>
+                        <span className='plus'>+</span>
+                        <p className='mb-0'>Successful deliveries</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-        <section className="py-5">
+          <div className='new_section'>
+            <div className='new_section_inner'>
+              <div className='container'>
+                <div className='row'>
+                  <div className='section_title'>
+                    <span className='title_badge'>Why use VeggieGo</span>
+                    <h2 className='title'>Why choose us</h2>
+                    <p className='sub_title'>Enjoy fast and reliable delivery of the best fruits and vegetables.We bring farm-fresh produce straight to your doorstep.</p>
+                  </div>
+                  <div className='box_section'>
+                    <div className='col-lg-6 col-md-12'>
+                      <div className='new_data' aos-init aos-animate data-aos="fade-up" data-aos-duration="1500">
+                        <div className='new_data_block'>
+                          <div className='new_icon'>
+                            <img src={clockWhite} />
+                          </div>
+                          <div className='new_text'>
+                            <h6 className='fs-18'>Delivery in 30 min</h6>
+                            <p className='mb-0'>Get your favorite meals delivered fresh and fast to your door in just 30 minutes! Enjoy the convenience!</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className='new_data' aos-init aos-animate data-aos="fade-right" data-aos-duration="1500">
+                        <div className='new_data_block'>
+                          <div className='new_icon'>
+                            <img src={clockWhite} />
+                          </div>
+                          <div className='new_text'>
+                            <h6 className='fs-18'>Quality Produce</h6>
+                            <p className='mb-0'>Get your favorite meals delivered fresh and fast to your door in just 30 minutes! Enjoy the convenience!</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className='new_data' aos-init aos-animate data-aos="fade-up" data-aos-duration="1500">
+                        <div className='new_data_block'>
+                          <div className='new_icon'>
+                            <img src={clockWhite} />
+                          </div>
+                          <div className='new_text'>
+                            <h6 className='fs-18'>Live Vegetables Check </h6>
+                            <p className='mb-0'>Get your favorite meals delivered fresh and fast to your door in just 30 minutes! Enjoy the convenience!</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className='col-lg-6 col-md-12'>
+                      {/* <div className='new_image'>
+                        <img src={capsicum}/>
+                      </div> */}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='row_am service_section'>
+            <div className='container'>
+              <div className='section_title'>
+                <h2 className='title'>Advanced features</h2>
+                <p className='adv_title'>Enjoy fast and reliable delivery of the best fruits and vegetables. We bring farm-fresh
+                  produce straight to your doorstep. Quality you
+                </p>
+              </div>
+              <div className='row service_block flex-row-reverse'>
+                <div className='col-md-6'>
+                  <div className='service_text'>
+                    <h3 >Effortless management of vendors operations</h3>
+
+                    <p className='text-start'>Enjoy fast and reliable delivery of the best fruits and
+                      vegetables. We bring farm-fresh produce straight to
+                      your doorstep. Quality you.
+                    </p>
+                    <ul className='design_block'>
+                      <li>
+                        <div className='d-flex gap-2'>
+                          <img src={tickCircle} className='circle_tick' />
+                          <h6>Live Vegetables Check </h6>
+                        </div>
+
+                        <p className='text-start '>Enjoy fast and reliable delivery of the best fruits and
+                          vegetables. We bring farm-fresh produce straight to
+                          your doorstep. Quality you.
+                        </p>
+                      </li>
+                      <li>
+                      <div className='d-flex gap-2'>
+                          <img src={tickCircle} className='circle_tick' />
+                          <h6>Live Vegetables Check </h6>
+                        </div>
+                        <p className='text-start'>Enjoy fast and reliable delivery of the best fruits and
+                          vegetables. We bring farm-fresh produce straight to
+                          your doorstep. Quality you.
+                        </p>
+                      </li>
+                    </ul>
+
+                  </div>
+                </div>
+                <div className='col-md-6'>
+                  <div className='inner_block' data-aos="fade-up" data-aos-duration="1500">
+                    <div className='img position-relative'>
+                      <img src={mobileImage} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <div className='row_am download_app'>
+            <div className='dap_block'>
+              <div className='blur_shape bs_1'>
+                <div className='row'>
+                  <div className='col-lg-3 col-md-12'>
+                    <div className='dap_image'>
+                      <img src={veggies_left}/>
+                    </div>
+                  </div>
+                  <div className='col-lg-6 col-md-12'>
+                    <div className='dap_text'>
+                      <div className='section_title'>
+                      <span className='title_badge'>
+                        register restaurant
+                      </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> */}
+          <div className='register_res row_am'>
+            <div className='reg_block'>
+              <div className='row'>
+                <div className='col-lg-7 col-md-10 mx-auto'>
+                  <div className='dap_text'>
+                    <div className='section_title'>
+                      <span className='title_badge'>
+                        register restaurant
+                      </span>
+                      <h2 className='title text-white'>Begin gaining more customers today</h2>
+                      <p className='sub_title'>Lorem Ipsum is simply dummy text of the printing and type setting industry lorem Ipsum has been the industrys.</p>
+                    </div>
+                    <div className='regis'>
+                      <div className='btn-block'>
+                        <Link to='/' className='btn-register'>Register Restaurant</Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='advance_section row_am'>
+            <div className='adv_inner'>
+              <div className='blur_section bs_1'></div>
+              <div className='blur_section bs_2'></div>
+              <div className='container'>
+                <div className='section_title'>
+                  <span className='title_badge'>Easy Steps</span>
+                  <h2 className='title text-white'>How it works</h2>
+                  <p className='sub_title_adv'>Lorem Ipsum is simply dummy text of the printing indus orem Ipsum has been the industrys standard dummy text ever since.</p>
+                </div>
+                <div className='adv_list'>
+                  <div className='row'>
+                    <div className='col-lg-4 col-sm-6 col-md-6'>
+                      <div className='box' aos-init aos-animate data-aos="fade-up" data-aos-duration="1500">
+                        <div className='box_icon'>
+                          <img src={smiley} />
+                        </div>
+                        <div className='box_text'>
+                          <span className='counter_value'>5000</span>
+                          <span className='plus'>+</span>
+                          <p className='mb-0'>Happy Users</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className='col-lg-4 col-sm-6 col-md-6'>
+                      <div className='box' aos-init aos-animate data-aos="fade-up" data-aos-duration="1500">
+                        <div className='box_icon'>
+                          <img src={smiley} />
+                        </div>
+                        <div className='box_text'>
+                          <span className='counter_value'>5000</span>
+                          <span className='plus'>+</span>
+                          <p className='mb-0'>Happy Users</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className='col-lg-4 col-sm-6 col-md-6'>
+                      <div className='box' aos-init aos-animate data-aos="fade-up" data-aos-duration="1500">
+                        <div className='box_icon'>
+                          <img src={smiley} />
+                        </div>
+                        <div className='box_text'>
+                          <span className='counter_value'>5000</span>
+                          <span className='plus'>+</span>
+                          <p className='mb-0'>Happy Users</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className='adv_btn_block'>
+                  <p className='text-white text-start'>Free Delivery For Next Three Orders </p>
+                  <ul className='app-btn d-flex justify-content-left'>
+                    <li>
+                      <Link to='/'>
+                        <img src={appStore} />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to='/'>
+                        <img src={googlePlay} />
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className='device'>
+              <img src={device} />
+            </div>
+          </div>
+
+        </div>
+        {/* <section className="py-5">
           <div className="container">
             <div className='row'>
               <div className='d-flex justify-content-between'>
@@ -88,110 +370,9 @@ const HomePage = () => {
           </div>
         </section>
 
-        <section className="py-5">
-          <div className="container">
-            <div className="row">
-              <div className='d-flex justify-content-between'>
-                <div className='content_text'>
-                  <div className='sub_title d-flex align-items-center'>
-                    <span className="text-left ">FRESH VEGETABLES FROM FARM</span>
-                  </div>
-                  <div className='content_title pb-3'>
-                    <h2 className="mb-4">Our Organic Products</h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="tab-content">
-              <div className=''>
-                <div className='row g-4'>
-                  <div className='col-sm-6 col-md-6 col-xl-3'>
-                    <div className='product position-relative'>
-                      <div className='product_content position-relative bg-white'>
-                        <div className='image_wrap d-flex justify-content-center align-items-center'>
-                          <Link to='/'>
-                            <img src="https://jthemes.net/themes/html/organic/assets/images/product/product2.png"
-                              className='veg-image-1'
-                            /></Link>
-                        </div>
-                        <div className='text-left'>
-                          <h3 className='product_title'>Organic Foods</h3>
-                          <div className='product_price'>$26.00</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className='col-sm-6 col-md-6 col-xl-3'>
-                    <div className='product position-relative'>
-                      <div className='product_content position-relative bg-white'>
-                        <div className='image_wrap d-flex justify-content-center align-items-center'>
-                          <Link to='/'>
-                            <img src="https://jthemes.net/themes/html/organic/assets/images/product/product2.png" className='veg-image-1' /></Link>
-                        </div>
-                        <div className='text-left'>
-                          <h3 className='product_title'>Organic Foods</h3>
-                          <div className='product_price'>$26.00</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className='col-sm-6 col-md-6 col-xl-3'>
-                    <div className='product position-relative'>
-                      <div className='product_content position-relative bg-white'>
-                        <div className='image_wrap d-flex justify-content-center align-items-center'>
-                          <Link to='/'>
-                            <img src="https://jthemes.net/themes/html/organic/assets/images/product/product2.png" className='veg-image-1' /></Link>
-                        </div>
-                        <div className='text-left'>
-                          <h3 className='product_title'>Organic Foods</h3>
-                          <div className='product_price'>$26.00</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className='col-sm-6 col-md-6 col-xl-3'>
-                    <div className='product position-relative'>
-                      <div className='product_content position-relative bg-white'>
-                        <div className='image_wrap d-flex justify-content-center align-items-center'>
-                          <Link to='/'>
-                            <img src="https://jthemes.net/themes/html/organic/assets/images/product/product2.png" className='veg-image-1' /></Link>
-                        </div>
-                        <div className='text-left'>
-                          <h3 className='product_title'>Organic Foods</h3>
-                          <div className='product_price'>$26.00</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-        </section >
+       
 
-        < section className="bg-light py-5" >
-          <div className="container">
-            <h2 className="text-center mb-4">Fresh Fruits</h2>
-            <div className="row">
-              <div className="col-md-6">
-                <p>
-                  Enjoy our hand-picked, organic fruits loaded with vitamins and minerals. Stay refreshed and healthy
-                  with our wide selection.
-                </p>
-                <ul>
-                  <li>🍎 Apples - Packed with fiber and antioxidants</li>
-                  <li>🍌 Bananas - Great for energy and digestion</li>
-                  <li>🍇 Grapes - Boosts heart health</li>
-                  <li>🍉 Watermelon - Hydrating and refreshing</li>
-                </ul>
-              </div>
-              <div className="col-md-6">
-                <img src={veggieLogo} alt="Fresh Fruits" className="img-fluid rounded" />
-              </div>
-            </div>
-          </div>
-        </section >
+        */}
 
       </div >
 

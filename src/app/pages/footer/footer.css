@@ -88,3 +88,7 @@ ul {
     margin-right: 10px;
     transition: .4s all
   }
+  .app-btn li{
+    list-style-type: none;
+    margin: 0px 20px 0px 0px;
+  }

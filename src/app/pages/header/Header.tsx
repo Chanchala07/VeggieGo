@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import './header.css'
-import veggieLogo from '../../assets/Images/veggiego-logo.png';
+import veggieLogo from '../../assets/Images/veggiego_logo.png';
 import '../../assets/css/style.css'
 
 const Header = () => {

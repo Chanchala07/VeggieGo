@@ -36,7 +36,9 @@ a:hover {
   min-height: 100vh;
   background-color: #faf9f5 !important; 
 }  */
-
+body{
+  background-color: #faf9f5 !important; 
+}
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
