@@ -1,12 +1,12 @@
-import './App.css';
+import "./App.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import { Routes, Route, Router } from "react-router-dom";
-import Header from './app/pages/header/Header';
-import Footer from './app/pages/footer/Footer';
-import HomePage from './app/pages/home-page/HomePage';
+import Header from "./app/pages/header/Header";
+import Footer from "./app/pages/footer/Footer";
+import HomePage from "./app/pages/home-page/HomePage";
 
 function App() {
-
   return (
     <>
       <Header />
@@ -15,7 +15,7 @@ function App() {
       </Routes>
       <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
