@@ -3,6 +3,7 @@ import "./footer.css";
 import veggieLogo from "../../assets/Images/veggiego_footer.png";
 import googlePlay from "../../assets/Images/googleplay.png";
 import appStore from "../../assets/Images/appstore.png";
+import qrCode from "../../assets/Images/QR_code.png";
 
 const Footer = () => {
   return (
@@ -16,10 +17,7 @@ const Footer = () => {
                   <img src={veggieLogo} style={{ height: "50px" }} />
                 </div>
                 <p>
-                  Enjoy fast and reliable delivery of the best fruits and
-                  vegetables. We bring farm-fresh produce straight to your
-                  doorstep. Quality you Enjoy fast and reliable delivery of the
-                  best fruits and vegetables.
+                Enjoy fast and reliable delivery of the best fruits and vegetables. We bring farm-fresh produce straight to your doorstep. Quality you Enjoy fast and reliable delivery of the best fruits and vegetables. We bring farm-fresh produce straight to your doorstep. Quality you.
                 </p>
                 <div className="app-btn d-flex">
                   <li>
@@ -36,7 +34,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 col-12">
+            <div className="col-lg-3 col-md-6 col-12">
               <div className="links text-start">
                 <h5>Support</h5>
                 <ul>
@@ -75,7 +73,8 @@ const Footer = () => {
             </div>
             <div className="col-lg-3 col-md-6 col-12">
               <div className="links text-start">
-                <h5>Subscribe us</h5>
+             
+                <img src={qrCode}/>
               </div>
             </div>
           </div>
@@ -85,7 +84,7 @@ const Footer = () => {
             <div className="row">
               <div className="col-md-6">
                 <p className="text-start">
-                  © Copyrights 2024. All rights reserved.
+                  © Copyrights {new Date().getFullYear()}. All rights reserved.
                 </p>
               </div>
 
