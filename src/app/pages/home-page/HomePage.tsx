@@ -9,7 +9,6 @@ import star from "../../assets/Images/start.png";
 import capsicum from "../../assets/Images/capsicum.png";
 import veggies_left from "../../assets/Images/vegeis_left.png";
 import "../../assets/css/style.css";
-import seamlessImage from "../../assets/Images/seamless_pic.png";
 import googlePlay from "../../assets/Images/googleplay.png";
 import appStore from "../../assets/Images/appstore.png";
 import device from "../../assets/Images/Mockup 1.png";
@@ -23,7 +22,7 @@ import userImg from "../../assets/Images/3d_avatar_1.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/pagination";
+// import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import iPhoneImg from "../../assets/Images/Group 34914.png";
 import list2 from "../../assets/Images/16.png";
@@ -32,6 +31,12 @@ import slideImg1 from "../../assets/Images/Mask group (1).png";
 import slideImg2 from "../../assets/Images/Mask group (2).png";
 import slideImg3 from "../../assets/Images/Mask group (3).png";
 import slideImg4 from "../../assets/Images/Mask group (4).png";
+import timeImg from '../../assets/Images/time.png';
+import liveImg from '../../assets/Images/live.png';
+import qualityImg from '../../assets/Images/quality.png';
+import support from '../../assets/Images/support.png';
+import playIcon from '../../assets/Images/play_icon.png';
+import orderImg from '../../assets/Images/Group 34919.png';
 
 const HomePage = () => {
   const items = Array(6).fill({
@@ -45,16 +50,6 @@ const HomePage = () => {
       once: false, // whether animation should happen only once - while scrolling down
     });
   }, []);
-  const vegetables = [
-    { name: "Apple", image: veggies },
-    { name: "Strawberry", image: veggies },
-    { name: "Orange", image: veggies },
-    { name: "Tomato", image: veggies },
-    { name: "Apple", image: veggies },
-    { name: "Strawberry", image: veggies },
-    { name: "Orange", image: veggies },
-    { name: "Tomato", image: veggies },
-  ];
 
   return (
     <>
@@ -65,7 +60,7 @@ const HomePage = () => {
           </div>
           <div className="container position-relative">
             <div className="row">
-              <div className="col-md-12 col-lg-6">
+              <div className="col-md-12 col-lg-6" data-aos="fade-up" data-aos-duration="1500">
                 <div className="banner_text">
                   <div className="text_wrap">
                     <span className="title_badge">
@@ -95,7 +90,7 @@ const HomePage = () => {
                       <img src={list3} />
                     </li>
                     <li>
-                      <img src={userImg} />
+                      <img src={playIcon} />
                     </li>
                   </ul>
                   <p className="mb-0">
@@ -193,9 +188,9 @@ const HomePage = () => {
             <div className="new_section_inner">
               <div className="container">
                 <div className="row">
-                  <div className="section_title">
+                  <div className="section_title" data-aos="fade-up" data-aos-duration="1500">
                     <h2 className="title">Why choose us</h2>
-                    <p className="adv_title">
+                    <p className="adv_title fs-18 color-gray">
                       Enjoy fast and reliable delivery of the best fruits and
                       vegetables.We bring farm-fresh produce straight to your
                       doorstep.
@@ -204,11 +199,14 @@ const HomePage = () => {
                   <div className="box_section">
                     <div className="col-lg-6 col-md-12">
                       <div className="new_left">
-                        <div className="new_data_block">
+                        <div className="new_data_block" aos-init
+                          aos-animate
+                          data-aos="fade-up"
+                          data-aos-duration="1500">
                           <div className="new_icon">
-                            <img src={clockWhite} />
+                            <img src={timeImg} />
                           </div>
-                          <div className="new_text">
+                          <div className="new_text" >
                             <h6 className="fs-18">30 min Delivery</h6>
                             <p className="mb-0">
                               Enjoy fast and reliable delivery of the best
@@ -218,9 +216,12 @@ const HomePage = () => {
                           </div>
                         </div>
 
-                        <div className="new_data_block">
+                        <div className="new_data_block" aos-init
+                          aos-animate
+                          data-aos="fade-up"
+                          data-aos-duration="1500">
                           <div className="new_icon">
-                            <img src={clockWhite} />
+                            <img src={qualityImg} />
                           </div>
                           <div className="new_text">
                             <h6 className="fs-18">Quality Produce</h6>
@@ -232,9 +233,13 @@ const HomePage = () => {
                           </div>
                         </div>
 
-                        <div className="new_data_block">
+                        <div className="new_data_block" aos-init
+                          aos-animate
+                          data-aos="fade-up"
+                          data-aos-duration="1500">
+
                           <div className="new_icon">
-                            <img src={clockWhite} />
+                            <img src={liveImg} />
                           </div>
                           <div className="new_text">
                             <h6 className="fs-18">Live Vegetables Check </h6>
@@ -248,9 +253,12 @@ const HomePage = () => {
                       </div>
                     </div>
                     <div className="col-lg-6 col-md-12">
-                      {/* <div className="new_image">
-                        <img src={capsicum} className="w-100 image_veg" />
-                      </div> */}
+                      <div className="new_image">
+                        <img src={capsicum} className="w-100 image_veg" aos-init
+                          aos-animate
+                          data-aos="fade-up"
+                          data-aos-duration="1500" />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -263,7 +271,7 @@ const HomePage = () => {
                 <h2 className="title">
                   Access over 5000+ veggies with just a tap
                 </h2>
-                <p className="adv_title">
+                <p className="adv_title fs-18 color-gray">
                   Enjoy fast and reliable delivery of the best fruits and
                   vegetables. We bring farm-fresh produce straight to your
                   doorstep. Quality you
@@ -338,9 +346,9 @@ const HomePage = () => {
 
           <div className="row_am service_section">
             <div className="container">
-              <div className="section_title">
+              <div className="section_title" data-aos="fade-up" data-aos-duration="1500">
                 <h2 className="title">Advanced features</h2>
-                <p className="adv_title">
+                <p className="adv_title fs-18 color-gray">
                   Enjoy fast and reliable delivery of the best fruits and
                   vegetables. We bring farm-fresh produce straight to your
                   doorstep. Quality you
@@ -348,7 +356,7 @@ const HomePage = () => {
               </div>
               <div className="row service_block flex-row-reverse">
                 <div className="col-md-6">
-                  <div className="service_text">
+                  <div className="service_text" data-aos="fade-up" data-aos-duration="1500">
                     <h3 className="text-start">
                       Effortless management of vendors operations
                     </h3>
@@ -386,7 +394,7 @@ const HomePage = () => {
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <div className="inner_block">
+                  <div className="inner_block" data-aos="fade-up" data-aos-duration="1500">
                     <div className="img position-relative">
                       <img src={mobileImage} />
                     </div>
@@ -395,7 +403,7 @@ const HomePage = () => {
               </div>
               <div className="row service_block">
                 <div className="col-md-6">
-                  <div className="service_text">
+                  <div className="service_text" data-aos="fade-up" data-aos-duration="1500">
                     <h3 className="text-start">
                       Seamless ordering process from app
                     </h3>
@@ -433,9 +441,9 @@ const HomePage = () => {
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <div className="inner_block">
+                  <div className="inner_block" data-aos="fade-up" data-aos-duration="1500">
                     <div className="img position-relative">
-                      <img src={seamlessImage} />
+                      <img src={orderImg} />
                     </div>
                   </div>
                 </div>
@@ -443,13 +451,13 @@ const HomePage = () => {
             </div>
           </div>
           <div className="register_res row_am">
-            <div className="reg_block">
+            <div className="reg_block" data-aos="fade-up" data-aos-duration="1500">
               <div className="row">
                 <div className="col-lg-7 col-md-10 mx-auto">
                   <div className="dap_text">
                     <div className="section_title">
-                      <span className="title_badge">register restaurant</span>
-                      <h2 className="title text-white">
+                      {/* <span className="title_badge">register restaurant</span> */}
+                      <h2 className="reg_title text-white">
                         Begin gaining more customers today
                       </h2>
                       <p className="sub_title">
@@ -470,66 +478,14 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-          <div className="feature_section row_am">
-            <div className="feature_inner">
-              <div className="container">
-                <div className="section_title">
-                  <h2 className="title">Our happy clients</h2>
-                  <p className="adv_title">
-                    Enjoy fast and reliable delivery of the best fruits and
-                    vegetables.We bring farm-fresh produce straight to your
-                    doorstep.Quality you.
-                  </p>
-                </div>
-                <div className="px-4 md:px-8 py-6">
-                  <Swiper
-                    slidesPerView={1}
-                    spaceBetween={20}
-                    breakpoints={{
-                      640: { slidesPerView: 2 },
-                      1024: { slidesPerView: 3 },
-                    }}
-                    pagination={{ clickable: true }}
-                    modules={[Pagination]}
-                  >
-                    {items.map((item, index) => (
-                      <SwiperSlide key={index}>
-                        <div className="ouwl_item max-w-[400px] mx-auto">
-                          <div className="item shadow-md rounded-lg">
-                            <div className="feature_box flex flex-col items-center text-center">
-                              <div className="img mb-3">
-                                <img
-                                  src={userImg}
-                                  alt="User"
-                                  className="rounded-full w-20 h-20 object-cover"
-                                />
-                              </div>
-                              <div className="text_sec">
-                                <h6 className="text-lg font-semibold">
-                                  {item.name}
-                                </h6>
-                                <p className="subtitle mt-1">{item.subtitle}</p>
-                                <p className="text-sm text-gray-500 mt-2">
-                                  {item.text}
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </SwiperSlide>
-                    ))}
-                  </Swiper>
-                </div>
-              </div>
-            </div>
-          </div>
+         
           <div className="advance_section row_am">
             <div className="adv_inner">
               <div className="blur_section bs_1"></div>
               <div className="blur_section bs_2"></div>
               <div className="container">
                 <div className="section_title">
-                  <span className="title_badge">Easy Steps</span>
+                  {/* <span className="title_badge">Easy Steps</span> */}
                   <h2 className="title text-white">How it works</h2>
                   <p className="sub_title_adv">
                     Lorem Ipsum is simply dummy text of the printing indus orem
@@ -617,52 +573,85 @@ const HomePage = () => {
               <img src={device} />
             </div>
           </div>
-        </div>
-        {/* <section className="py-5">
-          <div className="container">
-            <div className='row'>
-              <div className='d-flex justify-content-between'>
-                <div className='content_text'>
-                  <div className='sub_title d-flex align-items-center'>
-                    <span className="text-left ">FRESH VEGETABLES FROM FARM</span>
+          <div className="feature_section row_am">
+            <div className="feature_inner">
+              <div className="container">
+                <div className="section_title">
+                  <h2 className="title">Our happy clients</h2>
+                  <p className="adv_title fs-18 color-gray">
+                    Enjoy fast and reliable delivery of the best fruits and
+                    vegetables.We bring farm-fresh produce straight to your
+                    doorstep.Quality you.
+                  </p>
+                </div>
+                <div className="px-4 md:px-8 py-6">
+                  <Swiper
+                    slidesPerView={1}
+                    spaceBetween={20}
+                    breakpoints={{
+                      640: { slidesPerView: 2 },
+                      1024: { slidesPerView: 3 },
+                    }}
+                    pagination={{ clickable: true }}
+                    modules={[Pagination]}
+                  >
+                    {items.map((item, index) => (
+                      <SwiperSlide key={index}>
+                        <div className="ouwl_item max-w-[400px] mx-auto">
+                          <div className="item shadow-md rounded-lg">
+                            <div className="feature_box flex flex-col items-center text-center">
+                              <div className="img mb-3">
+                                <img
+                                  src={userImg}
+                                  alt="User"
+                                  className="rounded-full w-20 h-20 object-cover"
+                                />
+                              </div>
+                              <div className="text_sec">
+                                <h6 className="text-lg font-semibold">
+                                  {item.name}
+                                </h6>
+                                <p className="subtitle mt-1">{item.subtitle}</p>
+                                <p className="text-sm text-gray-500 mt-2">
+                                  {item.text}
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="support_section">
+            <div className="container">
+              <div className="support_box">
+
+                <div className="col-md-6">
+                  <div className="support_title">
+                    <img src={support} className="icon_customer" />
+                    <h3>Need support ? contact us now !</h3>
+                    <p>Need support ? contact us now !</p>
                   </div>
-                  <div className='content_title pb-3'>
-                    <h2 className="mb-4">Popular Categories</h2>
+                </div>
+                <div className="col-md-6">
+                  <div className="btn_block_support">
+                    <Link to='/' className="call_btn text-decoration-none fs-18">
+                      Call us now
+                    </Link>
+                    <Link to='/' className="email_btn text-decoration-none fs-18">
+                      Email us
+                    </Link>
                   </div>
                 </div>
               </div>
-
-              <Swiper
-                slidesPerView={1}
-                direction="horizontal"
-                spaceBetween={20}
-                pagination={{ clickable: true }}
-                breakpoints={{
-                  576: { slidesPerView: 2 },
-                  768: { slidesPerView: 3 },
-                  992: { slidesPerView: 4 },
-                }}
-                modules={[Pagination]}
-                className="mySwiper"
-                style={{ width: "100%", overflow: "hidden" }}
-              >
-                {vegetables.map((veg, index) => (
-                  <SwiperSlide key={index} className="text-center">
-                    <img
-                      src={veg.image}
-                      alt={veg.name}
-                      className="veg-image"
-                    />                 
-                  </SwiperSlide>
-                ))}
-              </Swiper>
             </div>
           </div>
-        </section>
+        </div>
 
-       
-
-        */}
       </div>
     </>
   );

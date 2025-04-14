@@ -20,7 +20,7 @@ h6 {
   font-size: 18px !important;
 }
 .row_am {
-  padding: 50px 0;
+  padding: 30px 0;
 }
 .btn_block {
   position: relative;
@@ -33,5 +33,5 @@ h6 {
   color: #fb5b29 !important;
 }
 .color-gray {
-  color: #666666;
+  color: #666666 !important;
 }

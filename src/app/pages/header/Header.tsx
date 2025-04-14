@@ -46,7 +46,11 @@ const Header = () => {
                                     <Link to="/contact" className="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Pages
                                     </Link>
-                                    
+                                    <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a className="dropdown-item" href="#">Blog 1</a>
+                                        <a className="dropdown-item" href="#">Blog 2</a>
+                                        <a className="dropdown-item" href="#">Blog 3</a>
+                                    </div>
                                 </li>
                                 <li className="nav-item">
                                     <Link to="/contact" className="nav-link">
