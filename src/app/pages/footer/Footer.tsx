@@ -72,11 +72,16 @@ const Footer = () => {
                       Email
                     </Link>
                   </li>
+                  <li>
+                    <Link to="/privacypolicy" className="">
+                     Privacy policy
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 col-12">
-              <div className="links text-start">
+              <div className="links">
                 <img src={qrCode} />
               </div>
             </div>
@@ -93,7 +98,7 @@ const Footer = () => {
 
               <div className="col-md-6">
                 <p className="text-end">
-                  Design & developed by Swapac Infotech
+                  Designed & developed by <Link to='https://swapinfotech.com/' target="_blank" className="company_name">Swapac Infotech  ltd pvt</Link>
                 </p>
               </div>
             </div>

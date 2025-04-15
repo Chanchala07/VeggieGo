@@ -29,6 +29,15 @@
     background-color: #fff;
     border: 1px solid #fb5b29;
   }
+  .btn_dark:hover{
+    color: #fff ;
+  }
+  @media screen and (max-width: 992px) {
+    .btn_block{
+      justify-content: center !important;
+      margin-left: 0px;
+    }
+  }
   
   
 

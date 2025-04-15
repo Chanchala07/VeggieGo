@@ -26,52 +26,40 @@ const Header = () => {
                         <div className="collapse navbar-collapse" id="navbarNav">
                             <ul className="navbar-nav ms-auto">
                                 <li className="nav-item dropdown">
-                                    <Link to="/" className="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <Link to="/" className="nav-link">
                                         Home
-                                    </Link>
-                                    <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a className="dropdown-item" href="#">Default 1</a>
-                                        <a className="dropdown-item" href="#">Default 2 Slider Hero</a>
-                                        <a className="dropdown-item" href="#">Default 3 Center Hero</a>
-                                        <a className="dropdown-item" href="#">Fitness</a>
-                                        <a className="dropdown-item" href="#">Food Delivery 1</a>
-                                    </div>
+                                    </Link>                                   
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/about" className="nav-link">
+                                    <Link to="/" className="nav-link">
                                         About us
                                     </Link>
                                 </li>
                                 <li className="nav-item dropdown">
-                                    <Link to="/contact" className="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <Link to="/" className="nav-link">
                                         Pages
-                                    </Link>
-                                    <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a className="dropdown-item" href="#">Blog 1</a>
-                                        <a className="dropdown-item" href="#">Blog 2</a>
-                                        <a className="dropdown-item" href="#">Blog 3</a>
-                                    </div>
+                                    </Link>       
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/contact" className="nav-link">
+                                    <Link to="/#reviews" className="nav-link">
                                         Reviews
                                     </Link>
                                     
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/contact" className="nav-link">
+                                    <Link to="/" className="nav-link">
                                         Blog
                                     </Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/contact" className="nav-link">
+                                    <Link to="/" className="nav-link">
                                         Contact
                                     </Link>
                                 </li>
                                 <li className="nav-item">
                                     <div className='btn_block'>
-                                        <Link to="/contact" className="nav-link btn_dark">
-                                            Order Now
+                                        <Link to="/" className="nav-link btn_dark">
+                                            Download Now
                                         </Link>
                                       
                                     </div>
