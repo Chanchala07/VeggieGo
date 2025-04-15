@@ -163,7 +163,7 @@ const HomePage = () => {
                       <div className="box_text">
                         <span className="counter_value">3855</span>
                         <span className="plus">+</span>
-                        <p className="mb-0">Restaurant Listings</p>
+                        <p className="mb-0">Vender Listings</p>
                       </div>
                     </div>
                   </div>
@@ -299,7 +299,11 @@ const HomePage = () => {
             <Swiper
               modules={[Navigation, Autoplay]}
               spaceBetween={20}
-              slidesPerView={3}
+              slidesPerView={1}
+              breakpoints={{
+                640: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+              }}
               navigation
               autoplay={{
                 delay: 3000,
@@ -510,7 +514,7 @@ const HomePage = () => {
                     <div className="regis">
                       <div className="btn-block">
                         <Link to="/" className="btn-register">
-                          Register Restaurant
+                          Register Vender
                         </Link>
                       </div>
                     </div>
@@ -614,7 +618,7 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-          <div className="feature_section row_am">
+          <div className="feature_section row_am" id="reviews">
             <div className="feature_inner">
               <div className="container">
                 <div className="section_title">
@@ -663,6 +667,101 @@ const HomePage = () => {
                       </SwiperSlide>
                     ))}
                   </Swiper>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="insight_section row_am">
+            <div className="container">
+              <div className="section_title">
+                <h2 className="title">Insights & inspirations</h2>
+              </div>
+              <div className="insight_block">
+                <div className="accordion">
+                  <div className="row">
+                    <div className="col-md-6">
+                      <div className="accordion-item">
+                        <h2 className="accordion-header" id="headingOne">
+                          <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            How do I manage my notifications?
+
+                          </button>
+                        </h2>
+                        <div id="collapseOne" className="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                          <div className="accordion-body color-gray">
+                            <strong>To manage notifications, go to "Settings," select "Notification Settings,".</strong>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="accordion-item">
+                        <h2 className="accordion-header" id="headingTwo">
+                          <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            How do I manage my notifications?
+
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div className="accordion-body color-gray">
+                            <strong>To manage notifications, go to "Settings," select "Notification Settings,".</strong>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="accordion-item">
+                        <h2 className="accordion-header" id="headingThree">
+                          <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                            How do I manage my notifications?
+
+                          </button>
+                        </h2>
+                        <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                          <div className="accordion-body color-gray">
+                            <strong>To manage notifications, go to "Settings," select "Notification Settings,".</strong>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="accordion-item">
+                        <h2 className="accordion-header" id="headingFour">
+                          <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                            How do I manage my notifications?
+
+                          </button>
+                        </h2>
+                        <div id="collapseFour" className="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                          <div className="accordion-body color-gray">
+                            <strong>To manage notifications, go to "Settings," select "Notification Settings,".</strong>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="accordion-item">
+                        <h2 className="accordion-header" id="headingFive">
+                          <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                            How do I manage my notifications?
+
+                          </button>
+                        </h2>
+                        <div id="collapseFive" className="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                          <div className="accordion-body color-gray">
+                            <strong>To manage notifications, go to "Settings," select "Notification Settings,".</strong>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="accordion-item">
+                        <h2 className="accordion-header" id="headingSix">
+                          <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                            How do I manage my notifications?
+
+                          </button>
+                        </h2>
+                        <div id="collapseSix" className="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                          <div className="accordion-body color-gray">
+                            <strong>To manage notifications, go to "Settings," select "Notification Settings,".</strong>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

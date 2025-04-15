@@ -92,3 +92,22 @@ ul {
     list-style-type: none;
     margin: 0px 20px 0px 0px;
   }
+  @media screen and (max-width:640px) {
+    .footer-bottom p, .links, .logo_footer{
+      text-align: center !important;
+    }
+   .about p{
+    text-align: center;
+    padding: 0px 20px 20px 20px
+   }
+   .app-btn{
+    justify-content: center;
+   }
+   .links h5{
+    margin-top: 15px;
+    margin-bottom: 25px;
+   }
+  }
+  .company_name,.company_name:hover{
+    color: #fb5b29;
+  }
