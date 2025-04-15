@@ -60,6 +60,7 @@
 @media screen and (max-width: 992px) {
   .banner_section .apps {
     justify-content: center;
+    display: block;
   }
 }
 
@@ -297,7 +298,6 @@
 }
 
 .new_icon {
-
   margin-right: 30px;
   position: relative;
 }
@@ -410,7 +410,7 @@
   padding: 100px 0 150px 0;
   position: relative;
   border: solid 1px #e3d3cf;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .sub_title_adv {
@@ -440,11 +440,10 @@
 }
 
 .device {
-  margin: 0 auto;
-  text-align: end;
-  margin-top: -25%;
+  right: 0px;
+  bottom: -180px;
   z-index: 1;
-  position: relative;
+  position: absolute;
 }
 
 @media screen and (max-width: 992px) {
@@ -452,7 +451,25 @@
     display: none;
   }
 }
-
+@media screen and (max-width: 992px) {
+  .service_text h3 {
+    font-size: 30px !important;
+  }
+  .service_text p {
+    padding-right: 0px !important;
+  }
+  .reg_title {
+    font-size: 40px !important;
+  }
+  .adv_btn_block p,
+  ul {
+    text-align: center !important;
+    justify-content: center;
+  }
+}
+.feature_inner {
+  margin-top: 100px;
+}
 .service_section {
   position: relative;
 }
@@ -462,12 +479,10 @@
 }
 
 @media screen and (max-width: 992px) {
-
   .adv_title,
   .sub_title_adv {
     padding: 0 50px !important;
   }
-
 }
 
 .service_block {
@@ -564,7 +579,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  padding-left: 80px
+  padding-left: 80px;
 }
 
 .icon_customer {
@@ -625,6 +640,19 @@
     padding: 40px 30px;
     margin-bottom: -150px;
   }
+  /* .support_title {
+    padding-left: 0px;
+  }
+  .icon_customer {
+    position: relative;
+    top: 5%;
+    left: 0px;
+    margin-bottom: 20px;
+  }
+  .support_title h3 {
+    width: 100%;
+    font-size: 35px;
+  } */
 }
 
 @media screen and (max-width: 576px) {
@@ -632,15 +660,15 @@
     margin-top: 0px;
     padding-bottom: 100px;
   }
- .banner_text{
-  padding: 0px 20px
- }
- .banner_text h1 {
-  font-size: 30px;
-  text-align: center;
- }
+  .banner_text {
+    padding: 0px 20px;
+  }
+  .banner_text h1 {
+    font-size: 30px;
+    text-align: center;
+  }
 }
-.reg_title{
+.reg_title {
   font-size: 64px;
   font-weight: 700;
 }

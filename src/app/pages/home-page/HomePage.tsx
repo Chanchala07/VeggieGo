@@ -1,13 +1,10 @@
 import { Link } from "react-router-dom";
 import "./homePage.css";
-import clockWhite from "../../assets/Images/clock-white.png";
-import veggies from "../../assets/Images/cat2.png";
 import smiley from "../../assets/Images/smiley.png";
 import user from "../../assets/Images/user.png";
 import bagIcon from "../../assets/Images/bag-icon 2.png";
 import star from "../../assets/Images/start.png";
 import capsicum from "../../assets/Images/capsicum.png";
-import veggies_left from "../../assets/Images/vegeis_left.png";
 import "../../assets/css/style.css";
 import googlePlay from "../../assets/Images/googleplay.png";
 import appStore from "../../assets/Images/appstore.png";
@@ -31,12 +28,12 @@ import slideImg1 from "../../assets/Images/Mask group (1).png";
 import slideImg2 from "../../assets/Images/Mask group (2).png";
 import slideImg3 from "../../assets/Images/Mask group (3).png";
 import slideImg4 from "../../assets/Images/Mask group (4).png";
-import timeImg from '../../assets/Images/time.png';
-import liveImg from '../../assets/Images/live.png';
-import qualityImg from '../../assets/Images/quality.png';
-import support from '../../assets/Images/support.png';
-import playIcon from '../../assets/Images/play_icon.png';
-import orderImg from '../../assets/Images/Group 34919.png';
+import timeImg from "../../assets/Images/time.png";
+import liveImg from "../../assets/Images/live.png";
+import qualityImg from "../../assets/Images/quality.png";
+import support from "../../assets/Images/support.png";
+import playIcon from "../../assets/Images/play_icon.png";
+import orderImg from "../../assets/Images/Group 34919.png";
 
 const HomePage = () => {
   const items = Array(6).fill({
@@ -60,7 +57,11 @@ const HomePage = () => {
           </div>
           <div className="container position-relative">
             <div className="row">
-              <div className="col-md-12 col-lg-6" data-aos="fade-up" data-aos-duration="1500">
+              <div
+                className="col-md-12 col-lg-6"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
                 <div className="banner_text">
                   <div className="text_wrap">
                     <span className="title_badge">
@@ -188,7 +189,11 @@ const HomePage = () => {
             <div className="new_section_inner">
               <div className="container">
                 <div className="row">
-                  <div className="section_title" data-aos="fade-up" data-aos-duration="1500">
+                  <div
+                    className="section_title"
+                    data-aos="fade-up"
+                    data-aos-duration="1500"
+                  >
                     <h2 className="title">Why choose us</h2>
                     <p className="adv_title fs-18 color-gray">
                       Enjoy fast and reliable delivery of the best fruits and
@@ -199,14 +204,17 @@ const HomePage = () => {
                   <div className="box_section">
                     <div className="col-lg-6 col-md-12">
                       <div className="new_left">
-                        <div className="new_data_block" aos-init
+                        <div
+                          className="new_data_block"
+                          aos-init
                           aos-animate
                           data-aos="fade-up"
-                          data-aos-duration="1500">
+                          data-aos-duration="1500"
+                        >
                           <div className="new_icon">
                             <img src={timeImg} />
                           </div>
-                          <div className="new_text" >
+                          <div className="new_text">
                             <h6 className="fs-18">30 min Delivery</h6>
                             <p className="mb-0">
                               Enjoy fast and reliable delivery of the best
@@ -216,10 +224,13 @@ const HomePage = () => {
                           </div>
                         </div>
 
-                        <div className="new_data_block" aos-init
+                        <div
+                          className="new_data_block"
+                          aos-init
                           aos-animate
                           data-aos="fade-up"
-                          data-aos-duration="1500">
+                          data-aos-duration="1500"
+                        >
                           <div className="new_icon">
                             <img src={qualityImg} />
                           </div>
@@ -233,11 +244,13 @@ const HomePage = () => {
                           </div>
                         </div>
 
-                        <div className="new_data_block" aos-init
+                        <div
+                          className="new_data_block"
+                          aos-init
                           aos-animate
                           data-aos="fade-up"
-                          data-aos-duration="1500">
-
+                          data-aos-duration="1500"
+                        >
                           <div className="new_icon">
                             <img src={liveImg} />
                           </div>
@@ -254,10 +267,14 @@ const HomePage = () => {
                     </div>
                     <div className="col-lg-6 col-md-12">
                       <div className="new_image">
-                        <img src={capsicum} className="w-100 image_veg" aos-init
+                        <img
+                          src={capsicum}
+                          className="w-100 image_veg"
+                          aos-init
                           aos-animate
                           data-aos="fade-up"
-                          data-aos-duration="1500" />
+                          data-aos-duration="1500"
+                        />
                       </div>
                     </div>
                   </div>
@@ -346,7 +363,11 @@ const HomePage = () => {
 
           <div className="row_am service_section">
             <div className="container">
-              <div className="section_title" data-aos="fade-up" data-aos-duration="1500">
+              <div
+                className="section_title"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
                 <h2 className="title">Advanced features</h2>
                 <p className="adv_title fs-18 color-gray">
                   Enjoy fast and reliable delivery of the best fruits and
@@ -356,7 +377,11 @@ const HomePage = () => {
               </div>
               <div className="row service_block flex-row-reverse">
                 <div className="col-md-6">
-                  <div className="service_text" data-aos="fade-up" data-aos-duration="1500">
+                  <div
+                    className="service_text"
+                    data-aos="fade-up"
+                    data-aos-duration="1500"
+                  >
                     <h3 className="text-start">
                       Effortless management of vendors operations
                     </h3>
@@ -394,7 +419,11 @@ const HomePage = () => {
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <div className="inner_block" data-aos="fade-up" data-aos-duration="1500">
+                  <div
+                    className="inner_block"
+                    data-aos="fade-up"
+                    data-aos-duration="1500"
+                  >
                     <div className="img position-relative">
                       <img src={mobileImage} />
                     </div>
@@ -403,7 +432,11 @@ const HomePage = () => {
               </div>
               <div className="row service_block">
                 <div className="col-md-6">
-                  <div className="service_text" data-aos="fade-up" data-aos-duration="1500">
+                  <div
+                    className="service_text"
+                    data-aos="fade-up"
+                    data-aos-duration="1500"
+                  >
                     <h3 className="text-start">
                       Seamless ordering process from app
                     </h3>
@@ -441,7 +474,11 @@ const HomePage = () => {
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <div className="inner_block" data-aos="fade-up" data-aos-duration="1500">
+                  <div
+                    className="inner_block"
+                    data-aos="fade-up"
+                    data-aos-duration="1500"
+                  >
                     <div className="img position-relative">
                       <img src={orderImg} />
                     </div>
@@ -451,7 +488,11 @@ const HomePage = () => {
             </div>
           </div>
           <div className="register_res row_am">
-            <div className="reg_block" data-aos="fade-up" data-aos-duration="1500">
+            <div
+              className="reg_block"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
               <div className="row">
                 <div className="col-lg-7 col-md-10 mx-auto">
                   <div className="dap_text">
@@ -478,9 +519,12 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-         
+
           <div className="advance_section row_am">
             <div className="adv_inner">
+              <div className="device">
+                <img src={device} />
+              </div>
               <div className="blur_section bs_1"></div>
               <div className="blur_section bs_2"></div>
               <div className="container">
@@ -494,7 +538,7 @@ const HomePage = () => {
                 </div>
                 <div className="adv_list">
                   <div className="row">
-                    <div className="col-lg-4 col-sm-6 col-md-6">
+                    <div className="col-lg-4 col-sm-6 col-md-4">
                       <div
                         className="box"
                         aos-init
@@ -512,7 +556,7 @@ const HomePage = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="col-lg-4 col-sm-6 col-md-6">
+                    <div className="col-lg-4 col-sm-6 col-md-4">
                       <div
                         className="box"
                         aos-init
@@ -530,7 +574,7 @@ const HomePage = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="col-lg-4 col-sm-6 col-md-6">
+                    <div className="col-lg-4 col-sm-6 col-md-4">
                       <div
                         className="box"
                         aos-init
@@ -568,9 +612,6 @@ const HomePage = () => {
                   </ul>
                 </div>
               </div>
-            </div>
-            <div className="device">
-              <img src={device} />
             </div>
           </div>
           <div className="feature_section row_am">
@@ -629,20 +670,25 @@ const HomePage = () => {
           <div className="support_section">
             <div className="container">
               <div className="support_box">
-
                 <div className="col-md-6">
                   <div className="support_title">
                     <img src={support} className="icon_customer" />
-                    <h3>Need support ? contact us now !</h3>
+                    <h3>Need support ?</h3>
                     <p>Need support ? contact us now !</p>
                   </div>
                 </div>
                 <div className="col-md-6">
                   <div className="btn_block_support">
-                    <Link to='/' className="call_btn text-decoration-none fs-18">
+                    <Link
+                      to="/"
+                      className="call_btn text-decoration-none fs-18"
+                    >
                       Call us now
                     </Link>
-                    <Link to='/' className="email_btn text-decoration-none fs-18">
+                    <Link
+                      to="/"
+                      className="email_btn text-decoration-none fs-18"
+                    >
                       Email us
                     </Link>
                   </div>
@@ -651,7 +697,6 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-
       </div>
     </>
   );
