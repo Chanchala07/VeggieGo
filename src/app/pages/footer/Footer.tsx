@@ -17,7 +17,11 @@ const Footer = () => {
                   <img src={veggieLogo} style={{ height: "50px" }} />
                 </div>
                 <p>
-                Enjoy fast and reliable delivery of the best fruits and vegetables. We bring farm-fresh produce straight to your doorstep. Quality you Enjoy fast and reliable delivery of the best fruits and vegetables. We bring farm-fresh produce straight to your doorstep. Quality you.
+                  Enjoy fast and reliable delivery of the best fruits and
+                  vegetables. We bring farm-fresh produce straight to your
+                  doorstep. Quality you Enjoy fast and reliable delivery of the
+                  best fruits and vegetables. We bring farm-fresh produce
+                  straight to your doorstep. Quality you.
                 </p>
                 <div className="app-btn d-flex">
                   <li>
@@ -35,7 +39,7 @@ const Footer = () => {
             </div>
 
             <div className="col-lg-3 col-md-6 col-12">
-              <div className="links text-start">
+              <div className="links ">
                 <h5>Support</h5>
                 <ul>
                   <li>
@@ -73,8 +77,7 @@ const Footer = () => {
             </div>
             <div className="col-lg-3 col-md-6 col-12">
               <div className="links text-start">
-             
-                <img src={qrCode}/>
+                <img src={qrCode} />
               </div>
             </div>
           </div>
