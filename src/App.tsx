@@ -29,15 +29,19 @@ function ScrollToHashElement() {
   return null;
 }
 function App() {
+  const location = useLocation();
+  const hideHeaderFooter = location.pathname === "/privacypolicy";
+
   return (
     <>
      <ScrollToHashElement />
-      <Header />
+     {!hideHeaderFooter && <Header />}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/privacypolicy" element={<PrivacyPolicy />} />
       </Routes>
-      <Footer />
+      {!hideHeaderFooter && <Footer />}
+      {/* <PrivacyPolicy/> */}
     </>
   );
 }

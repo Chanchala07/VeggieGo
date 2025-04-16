@@ -104,7 +104,12 @@
     margin-bottom: 30px;
   }
 }
-
+@media screen and (max-width: 320px) {
+  .adv_btn_block .app-btn{
+    flex-direction: column;
+    gap: 5px;
+  }
+}
 .apps img {
   width: 60px;
   height: 60px;
@@ -169,6 +174,12 @@
   width: 100%;
   border-radius: 20px;
   border: 1px solid #e3d3cf;
+}
+@media only screen and (max-width: 480px) {
+  .slides img{
+    padding: 10px;
+    border:none;
+  }
 }
 
 .up_section {
@@ -615,7 +626,7 @@
   margin-bottom: -100px;
   background: #fb5b29;
   border-radius: 20px;
-  padding: 50px;
+  padding: 40px;
 }
 
 .support_title {
@@ -784,16 +795,65 @@
 .accordion-item {
   background-color: #fff !important;
   margin-bottom: 20px !important;
-  border-radius: 10px !important;
+  border-radius: 16px !important;
   border: solid 1px #e3d3cf !important;
 }
-.accordion-header{
+
+.accordion-header {
   font-size: 20px;
 }
-.accordion-button{
+
+.accordion-button {
   font-size: 20px !important;
+  border-radius: 16px !important;
 }
 
-.accordian-body{
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
+.accordion-body {
   text-align: center;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #ef7215 !important;
+  color: #fff !important;
+}
+
+.accordion-button:not(.collapsed) ::after {
+  color: #fff !important;
+}
+
+.element1 {
+  position: absolute;
+  right: 35%;
+  top: 10%;
+  animation: starRotate 3s linear infinite;
+}
+
+.element2 {
+  position: absolute;
+  left: 20%;
+  bottom: 5%;
+  animation: starRotate 3s linear infinite;
+}
+
+.element1 img {
+  width: 30px;
+  height: auto;
+}
+.element2 img{
+  width: 20px;
+  height: auto
+}
+
+@keyframes starRotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(180deg);
+  }
 }

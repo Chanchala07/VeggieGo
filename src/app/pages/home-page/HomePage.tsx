@@ -19,7 +19,6 @@ import userImg from "../../assets/Images/3d_avatar_1.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
-// import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import iPhoneImg from "../../assets/Images/Group 34914.png";
 import list2 from "../../assets/Images/16.png";
@@ -34,6 +33,7 @@ import qualityImg from "../../assets/Images/quality.png";
 import support from "../../assets/Images/support.png";
 import playIcon from "../../assets/Images/play_icon.png";
 import orderImg from "../../assets/Images/Group 34919.png";
+import star3 from '../../assets/Images/Star 3.png';
 
 const HomePage = () => {
   const items = Array(6).fill({
@@ -309,7 +309,7 @@ const HomePage = () => {
                 delay: 3000,
                 disableOnInteraction: false,
               }}
-              speed={3000} // 2 seconds
+              speed={3000} 
               loop={true}
               className="dish_slider"
             >
@@ -533,7 +533,6 @@ const HomePage = () => {
               <div className="blur_section bs_2"></div>
               <div className="container">
                 <div className="section_title">
-                  {/* <span className="title_badge">Easy Steps</span> */}
                   <h2 className="title text-white">How it works</h2>
                   <p className="sub_title_adv">
                     Lorem Ipsum is simply dummy text of the printing indus orem
@@ -682,7 +681,7 @@ const HomePage = () => {
                     <div className="col-md-6">
                       <div className="accordion-item">
                         <h2 className="accordion-header" id="headingOne">
-                          <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                             How do I manage my notifications?
 
                           </button>
@@ -695,7 +694,7 @@ const HomePage = () => {
                       </div>
                       <div className="accordion-item">
                         <h2 className="accordion-header" id="headingTwo">
-                          <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                          <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                             How do I manage my notifications?
 
                           </button>
@@ -708,7 +707,7 @@ const HomePage = () => {
                       </div>
                       <div className="accordion-item">
                         <h2 className="accordion-header" id="headingThree">
-                          <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                          <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
                             How do I manage my notifications?
 
                           </button>
@@ -723,7 +722,7 @@ const HomePage = () => {
                     <div className="col-md-6">
                       <div className="accordion-item">
                         <h2 className="accordion-header" id="headingFour">
-                          <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                          <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
                             How do I manage my notifications?
 
                           </button>
@@ -736,7 +735,7 @@ const HomePage = () => {
                       </div>
                       <div className="accordion-item">
                         <h2 className="accordion-header" id="headingFive">
-                          <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                          <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
                             How do I manage my notifications?
 
                           </button>
@@ -749,7 +748,7 @@ const HomePage = () => {
                       </div>
                       <div className="accordion-item">
                         <h2 className="accordion-header" id="headingSix">
-                          <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                          <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
                             How do I manage my notifications?
 
                           </button>
@@ -769,6 +768,14 @@ const HomePage = () => {
           <div className="support_section">
             <div className="container">
               <div className="support_box">
+                <div className="element">
+                  <span className="element1">
+                    <img src={star3}/>
+                  </span>
+                  <span className="element2">
+                    <img src={star3}/>
+                  </span>
+                </div>
                 <div className="col-md-6">
                   <div className="support_title">
                     <img src={support} className="icon_customer" />
