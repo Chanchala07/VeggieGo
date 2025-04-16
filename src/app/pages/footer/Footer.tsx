@@ -11,6 +11,7 @@ const Footer = () => {
       <div className="text-light footer">
         <div className="container">
           <div className="row">
+           
             <div className="col-lg-5 col-md-6 col-12">
               <div className="about text-start">
                 <div className="logo_footer">
@@ -74,7 +75,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link to="/privacypolicy" className="">
-                     Privacy policy
+                      Privacy policy
                     </Link>
                   </li>
                 </ul>
