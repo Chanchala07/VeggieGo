@@ -1,6 +1,4 @@
-import { Link } from 'react-router-dom';
 import './privacypolicy.css';
-import support from "../assets/Images/support.png"
 
 const PrivacyPolicy = () => {
     return (
