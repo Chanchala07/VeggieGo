@@ -309,7 +309,7 @@ const HomePage = () => {
                 delay: 3000,
                 disableOnInteraction: false,
               }}
-              speed={3000} 
+              speed={3000}
               loop={true}
               className="dish_slider"
             >
@@ -670,6 +670,44 @@ const HomePage = () => {
               </div>
             </div>
           </div>
+          {/* <div className="download_app row_am">
+            <div className="dap_block">
+              <div className="row">
+                <div className="col-lg-3 col-md-12 order-2 order-lg-1">
+                  <div className="dap_image">
+                    <img src={leftImg} />
+                  </div>
+                </div>
+                <div className="col-lg-6 col-md-12 order-1 order-lg-2">
+                  <div className="dap_text">
+                    <div className="section_title">
+                      <h2 className="title text-white">Download app to
+                        enjoy 5000+ vegetable
+                        from 600+vendors
+                      </h2>
+                    </div>
+                    <ul className="app-btn d-flex justify-content-center mt-5">
+                    <li>
+                      <Link to="/">
+                        <img src={appStore} />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/">
+                        <img src={googlePlay} />
+                      </Link>
+                    </li>
+                  </ul>
+                  </div>
+                </div>
+                <div className="col-lg-3 col-md-12 order-3 order-lg-3">
+                  <div className="dap_image_1">
+                    <img src={rightImg} />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> */}
           <div className="insight_section row_am">
             <div className="container">
               <div className="section_title">
@@ -687,7 +725,7 @@ const HomePage = () => {
                           </button>
                         </h2>
                         <div id="collapseOne" className="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                          <div className="accordion-body color-gray">
+                          <div className="accordion-body text-start color-gray">
                             <strong>To manage notifications, go to "Settings," select "Notification Settings,".</strong>
                           </div>
                         </div>
@@ -700,7 +738,7 @@ const HomePage = () => {
                           </button>
                         </h2>
                         <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                          <div className="accordion-body color-gray">
+                          <div className="accordion-body text-start color-gray">
                             <strong>To manage notifications, go to "Settings," select "Notification Settings,".</strong>
                           </div>
                         </div>
@@ -713,7 +751,7 @@ const HomePage = () => {
                           </button>
                         </h2>
                         <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                          <div className="accordion-body color-gray">
+                          <div className="accordion-body text-start color-gray">
                             <strong>To manage notifications, go to "Settings," select "Notification Settings,".</strong>
                           </div>
                         </div>
@@ -728,7 +766,7 @@ const HomePage = () => {
                           </button>
                         </h2>
                         <div id="collapseFour" className="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                          <div className="accordion-body color-gray">
+                          <div className="accordion-body text-start color-gray">
                             <strong>To manage notifications, go to "Settings," select "Notification Settings,".</strong>
                           </div>
                         </div>
@@ -741,7 +779,7 @@ const HomePage = () => {
                           </button>
                         </h2>
                         <div id="collapseFive" className="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                          <div className="accordion-body color-gray">
+                          <div className="accordion-body text-start color-gray">
                             <strong>To manage notifications, go to "Settings," select "Notification Settings,".</strong>
                           </div>
                         </div>
@@ -754,7 +792,7 @@ const HomePage = () => {
                           </button>
                         </h2>
                         <div id="collapseSix" className="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-                          <div className="accordion-body color-gray">
+                          <div className="accordion-body text-start color-gray">
                             <strong>To manage notifications, go to "Settings," select "Notification Settings,".</strong>
                           </div>
                         </div>
@@ -770,10 +808,10 @@ const HomePage = () => {
               <div className="support_box">
                 <div className="element">
                   <span className="element1">
-                    <img src={star3}/>
+                    <img src={star3} />
                   </span>
                   <span className="element2">
-                    <img src={star3}/>
+                    <img src={star3} />
                   </span>
                 </div>
                 <div className="col-md-6">

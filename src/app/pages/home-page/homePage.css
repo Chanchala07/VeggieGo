@@ -260,6 +260,9 @@
   .title {
     font-size: 35px !important;
   }
+  .service_text{
+    padding-left: 25px !important;
+  }
 }
 
 .new_section_inner {
@@ -440,11 +443,6 @@
   position: absolute;
 }
 
-.dap_image {
-  transform: translate(-25%, -50%) rotate(-15deg);
-  position: absolute;
-}
-
 .advance_section {
   padding-left: 15px !important;
   padding-right: 15px !important;
@@ -510,7 +508,7 @@
   }
 
   .reg_title {
-    font-size: 40px;
+    font-size: 40px !important;
   }
 
   .adv_btn_block p,
@@ -812,10 +810,6 @@
   box-shadow: none !important;
 }
 
-.accordion-body {
-  text-align: center;
-}
-
 .accordion-button:not(.collapsed) {
   background-color: #ef7215 !important;
   color: #fff !important;
@@ -824,7 +818,10 @@
 .accordion-button:not(.collapsed) ::after {
   color: #fff !important;
 }
-
+/* Expanded (rotated) state */
+.accordion-button:not(.collapsed)::after {
+  filter: brightness(0) invert(1); /* Ensures it's still white */
+}
 .element1 {
   position: absolute;
   right: 35%;
@@ -844,7 +841,7 @@
   height: auto;
 }
 .element2 img{
-  width: 20px;
+  width: 25px;
   height: auto
 }
 
@@ -857,3 +854,32 @@
     transform: rotate(180deg);
   }
 }
+/* .download_app{
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.dap_block{
+  max-width: 1370px;
+    margin: 0 auto;
+    padding: 120px 0;
+    position: sticky;
+    z-index: 99;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: #000;
+}
+.dap_image {
+  top: 0px;
+  position: absolute;
+}
+.dap_image_1{
+  position: absolute;
+  top: 0px;
+  right: 0px
+}
+.dap_text .section_title{
+  padding: 5px 70px
+}
+.dap_text .section_title h2{
+  font-size: 55px;
+} */

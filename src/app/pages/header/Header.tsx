@@ -23,14 +23,14 @@ const Header = () => {
                         >
                             <span className="navbar-toggler-icon"></span>
                         </button>
-                        <div className="collapse navbar-collapse" id="navbarNav">
-                            <ul className="navbar-nav ms-auto">
+                        <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
+                            <ul className="navbar-nav ">
                                 <li className="nav-item">
                                     <Link to="/" className="nav-link">
                                         Home
-                                    </Link>                                   
+                                    </Link>
                                 </li>
-                                <li className="nav-item">
+                                {/* <li className="nav-item">
                                     <Link to="/" className="nav-link">
                                         About us
                                     </Link>
@@ -38,12 +38,12 @@ const Header = () => {
                                 <li className="nav-item">
                                     <Link to="/" className="nav-link">
                                         Pages
-                                    </Link>       
-                                </li>
+                                    </Link>
+                                </li> */}
                                 <li className="nav-item">
                                     <Link to="/#reviews" className="nav-link">
                                         Reviews
-                                    </Link>                                    
+                                    </Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link to="/" className="nav-link">
@@ -55,15 +55,18 @@ const Header = () => {
                                         Contact
                                     </Link>
                                 </li>
-                                <li className="nav-item">
+                                {/* <li className="nav-item">
                                     <div className='btn_block'>
                                         <Link to="/" className="nav-link btn_dark">
                                             Download Now
                                         </Link>
                                       
                                     </div>                                   
-                                </li>
+                                </li> */}
                             </ul>
+                        </div>
+                        <div className="d-none d-lg-block ms-auto">
+                            <Link to="/" className="nav-link btn_dark">Download Now</Link>
                         </div>
                     </nav>
                 </div>
