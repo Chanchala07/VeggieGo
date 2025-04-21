@@ -6,7 +6,7 @@ const PrivacyPolicy = () => {
             <div className="main">
                 <div className="policy_section">
                     <div className="container">
-                        <h1>Privacy Policy</h1>
+                        <h1>Privacy Policy </h1>
                         <div className='privacy_block '>
                             <p>
                                 Welcome to our VeggieGo!.
