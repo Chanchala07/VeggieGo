@@ -8,6 +8,9 @@ import HomePage from "./app/pages/home-page/HomePage";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import PrivacyPolicy from "./app/privacypolicy/PrivacyPolicy";
+import Disclaimer from "./app/disclaimer/Disclaimer";
+import Termsandcondition from "./app/termsandcondition/Termsandcondition";
+import RefundPolicy from "./app/refundpolicy/RefundPolicy";
 
 function ScrollToHashElement() {
   const { hash, pathname } = useLocation();
@@ -30,18 +33,20 @@ function ScrollToHashElement() {
 }
 function App() {
   const location = useLocation();
-  const hideHeaderFooter = location.pathname === "/privacypolicy";
+  const hideHeaderFooter = ["/privacypolicy", "/disclaimer","/termsandconditions","/refundpolicy"].includes(location.pathname);
 
   return (
     <>
-     <ScrollToHashElement />
-     {!hideHeaderFooter && <Header />}
+      <ScrollToHashElement />
+      {!hideHeaderFooter && <Header />}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+        <Route path="/disclaimer" element={<Disclaimer />} />
+        <Route path="/termsandconditions" element={<Termsandcondition />} />
+        <Route path="/refundpolicy" element={<RefundPolicy />} />
       </Routes>
       {!hideHeaderFooter && <Footer />}
-      {/* <PrivacyPolicy/> */}
     </>
   );
 }

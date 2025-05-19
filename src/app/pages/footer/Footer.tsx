@@ -59,18 +59,8 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to="/" className="">
-                      Twitter
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/" className="">
-                      Pinterest
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/" className="">
-                      Email
+                    <Link to="/disclaimer" className="">
+                      Disclaimer
                     </Link>
                   </li>
                   <li>
@@ -78,6 +68,16 @@ const Footer = () => {
                       Privacy policy
                     </Link>
                   </li>
+                  <li>
+                    <Link to="/termsandconditions" className="">
+                      Terms and conditions
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/refundpolicy" className="">
+                      Refund and cancellation policy
+                    </Link>
+                  </li>               
                 </ul>
               </div>
             </div>

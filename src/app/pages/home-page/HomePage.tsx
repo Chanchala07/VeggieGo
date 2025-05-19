@@ -137,7 +137,7 @@ const HomePage = () => {
                         <img src={smiley} />
                       </div>
                       <div className="box_text">
-                        <span className="counter_value">5000</span>
+                        <span className="counter_value">50m</span>
                         <span className="plus">+</span>
                         <p className="mb-0">Happy Users</p>
                       </div>
@@ -149,7 +149,7 @@ const HomePage = () => {
                         <img src={star} />
                       </div>
                       <div className="box_text">
-                        <span className="counter_value">1879</span>
+                        <span className="counter_value">50k</span>
                         <span className="plus">+</span>
                         <p className="mb-0">Positive Reviews</p>
                       </div>
@@ -161,7 +161,7 @@ const HomePage = () => {
                         <img src={user} />
                       </div>
                       <div className="box_text">
-                        <span className="counter_value">3855</span>
+                        <span className="counter_value">25k</span>
                         <span className="plus">+</span>
                         <p className="mb-0">Vender Listings</p>
                       </div>
@@ -174,7 +174,7 @@ const HomePage = () => {
                       </div>
                       <div className="box_text">
                         <span className="counter_value" data-count="5000">
-                          985M
+                          87M
                         </span>
                         <span className="plus">+</span>
                         <p className="mb-0">Successful deliveries</p>
